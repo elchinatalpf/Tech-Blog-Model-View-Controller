@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(90, 101, 106);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
+  padding: 20px;
+  background-color: #13293d;
+  text-align: center;
+  color: rgba(241, 237, 237, 0.896);
+}
+
+nav {
+  display: flex;
+  background-color:  #d8a47f;
+  justify-content: space-evenly;
+}
