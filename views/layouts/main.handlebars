@@ -22,12 +22,13 @@
       </h1>
     </header>
 
-    <nav>
-      <a href="/">Home</a>
-      <a href="/dashboard">Dashboard</a>
-      <button class="no-button" id="logout">logout</button>
-      <a href="/login">login</a>
-    </nav>
+  <nav role="navigation">
+    <a href="/" class="nav-link">Home</a>
+    <a href="/dashboard" class="nav-link">Dashboard</a>
+    <a href="/login" class="nav-link">Login</a>
+    <button class="no-button nav-button" id="logout">Logout</button>
+    <button class="nav-button">Profile</button>
+  </nav>
 
     <main>
       {{{body}}}
