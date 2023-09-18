@@ -1,3 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(-45deg, #939191, #638387, #837963, #a4a184);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 header {
   padding: 20px;
   background-color: #13293d;
@@ -26,4 +53,27 @@ nav {
   color: #000;
   transform: scale(1.1);
   z-index: 2;
+}
+
+.btn-long-fancy {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background-color: #b07860;
+  color: #0f0101;
+  transition: all 0.3 ease;
+}
+
+.btn-long-fancy:hover {
+  background-color: #064073;
+  color:#fff;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: inherit;
 }
