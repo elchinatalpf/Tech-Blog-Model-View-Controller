@@ -1,0 +1,12 @@
+[
+  {
+    "blogpost_id": 1,
+    "comment_content": "This is so amazingly cool.",
+    "user_id": 1
+  },
+  {
+    "blogpost_id": 2,
+    "comment_content": "Comment to testing stuff.",
+    "user_id": 2
+  }
+]
