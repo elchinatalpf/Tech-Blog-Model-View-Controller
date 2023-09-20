@@ -1,7 +1,7 @@
 <div class="container mt-4">
   <div class="row">
     <div class="col-auto">
-      <h2>Welcome, {{username}}</h2>
+      <h2>Welcome, {{name}}</h2>
     </div>
   </div>
 
@@ -24,11 +24,11 @@
       </form>
     </div>
 
-    {{#if blogpost.length}}
+    {{#if blogposts.length}}
     <div class="col-md-6 post-list">
       <h3>Current Posts:</h3>
 
-      {{#each blogs as |blog|}}
+      {{#each blogposts as |blog|}}
       <div class="row mb-2">
         <div class="col-md-8">
           <h4><a href="/blog/{{blog.id}}">{{blog.title}}</a></h4>

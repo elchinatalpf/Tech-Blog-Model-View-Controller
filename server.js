@@ -15,7 +15,7 @@ const hbs = exphbs.create({ helpers });
 
 // check this later for global variable
 const sess = {
-  secret: SESSION_SECRET,
+  secret: 'Super secret secret',
   cookie: {},
   resave: false,
   saveUninitialized: true,
