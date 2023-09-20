@@ -78,7 +78,13 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-
+router.get('/signup', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect.apply('/dashboard');
+    return;
+  }
+  res.render('signup');
+});
 // maybe here needs to be somethign else that i dont remember
 
 module.exports = router;
