@@ -1,10 +1,12 @@
 [
   {
-    "tile": "Learning Code",
-    "description": "Testing description for learning code"
+    "title": "Learning Code",
+    "description": "Testing description for learning code",
+    "user": 1
   },
   {
     "title": "Testing blogpost",
-    "description": "This is to test blog post"
+    "description": "This is to test blog post",
+    "user": 2
   }
 ]
