@@ -12,12 +12,13 @@
     to explore and share your knowledge!
   </p>
 </section> --}}
+{{#each blog as |blogpost|}}
 <div>
   <div>
     <h2>
       <a href="/blogs/{{blogpost.id}}">{{blogpost.title}}</a>
     </h2>
-    <p>Created by {{user.username}} on {{format_date date_created}}</p>
+    <p>Created by {{user.username}} on {{format_date blogpost.date_created}}</p>
   </div>
 </div>
 
@@ -26,5 +27,5 @@
     <a class="link" href="/dashboard">Create a New Post</a>
   </button>
 </div>
-
+{{/each}}
 {{!-- maybe this button will be in another place --}}
