@@ -85,6 +85,5 @@ router.get('/signup', (req, res) => {
   }
   res.render('signup');
 });
-// maybe here needs to be somethign else that i dont remember
 
 module.exports = router;
