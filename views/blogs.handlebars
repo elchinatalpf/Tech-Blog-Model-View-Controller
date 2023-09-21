@@ -15,10 +15,10 @@
     </div>
   </form>
 {{/if}}
-/<div>
-  {{#each comments as |comment|}}
+<div>
+  {{#each comment as |comment|}}
   <div style="border-style: solid;">
-    <p>{{comments.comment_content}}</p>
+    <p>{{comment.comment_content}}</p>
   </div>
   {{/each}}
 </div>
