@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { Blogpost } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// add get post by id
+
 router.post('/', withAuth, async (req, res) => {
   try {
     const newBlogPost = await Blogpost.create({
@@ -35,3 +37,5 @@ router.delete('/:id', withAuth, async (req, res) => {
 });
 
 module.exports = router;
+
+// check this route later

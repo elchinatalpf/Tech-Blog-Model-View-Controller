@@ -13,10 +13,14 @@ const PORT = process.env.PORT || 3001;
 
 const hbs = exphbs.create({ helpers });
 
-// check this later for global variable
 const sess = {
-  secret: SESSION_SECRET,
-  cookie: {},
+  secret: 'Super secret secret',
+  cookie: {
+    maxAge: 1800000,
+    httpOnly: true,
+    secure: false,
+    sameSite: 'strict',
+  },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({

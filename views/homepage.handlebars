@@ -1,24 +1,10 @@
-{{!-- <section>
-  <h2>About this blog</h2>
-  <p>
-    This is an application where you can share your thoughts, ideasand 
-    insights about technology.
-    Wether you are a seasoned developer or a tech enthusiast, this 
-    blog is for you.
-  </p>
-  <p>
-    Here, you can create new posts, comment on existing ones, and 
-    engage in meaningful discussions with the community. Feel free 
-    to explore and share your knowledge!
-  </p>
-</section> --}}
-{{#each blog as |blogpost|}}
+{{#each blogposts as |blogpost|}}
 <div>
   <div>
     <h2>
-      <a href="/blogs/{{blogpost.id}}">{{blogpost.title}}</a>
+      <a href="/blogposts/{{blogpost.id}}">{{blogpost.title}}</a>
     </h2>
-    <p>Created by {{user.username}} on {{format_date blogpost.date_created}}</p>
+    <p>Created by {{user.name}} on {{format_date blogpost.date_created}}</p>
   </div>
 </div>
 
@@ -28,4 +14,3 @@
   </button>
 </div>
 {{/each}}
-{{!-- maybe this button will be in another place --}}
