@@ -1,10 +1,11 @@
 const commentFormHandler = async (event) => {
   event.preventDefault();
-
-  const blog_id = document.querySelector('.comment-body').dataset.blogpost_id;
+console.log(event);
+  const blog_id = document.querySelector('.new-comment-form').dataset.blogid;
   
   const comment_content = document.querySelector('#comment-description').value.trim();
 
+  console.log(blog_id, comment_content);
   if (comment_content) {
     const response = await fetch('/api/comments', {
       method: 'POST',
@@ -13,7 +14,7 @@ const commentFormHandler = async (event) => {
         'Content-Type': 'application/json',
       },
     });
-console.log(response);
+
     if (response.ok) {
       document.location.reload();
     } else {
