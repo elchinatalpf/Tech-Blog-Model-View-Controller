@@ -6,18 +6,18 @@
 
 <div>
   {{#if logged_in}}
-  <form class="new-comment-form" data-blogid={{id}}>
-    <div >
+  <form class="new-comment-form d-flex flex-column justify-content-center"  data-blogid={{id}}>
+    <div class="textarea-container">
       <textarea class="ml-5" class="c-body" id="comment-description" ></textarea>
     </div>
-    <div>
+    <div class="button-container">
       <button class="button is-warning ml-5 mb-5" type="submit">Add Comment</button>
     </div>
   </form>
 {{/if}}
 <div>
   {{#each comments as |comment|}}
-  <div style="border-style: solid;">
+  <div class="comment-box">
     <p>{{comment.comment_content}}</p>
   </div>
   {{/each}}

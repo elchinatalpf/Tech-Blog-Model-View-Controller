@@ -77,3 +77,91 @@ nav {
 .link:hover {
   color: inherit;
 }
+
+.textarea-container,
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-comment-form {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.new-comment-form textarea {
+  width: 50%;
+  margin: 0 auto;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.new-comment-form button {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.new-comment-form button:hover {
+  background-color: #002aff;
+  cursor: pointer;
+}
+
+.comment-box {
+  border: 1px solid #0f0c0c;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 10px auto;
+}
+
+.comment-box p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.blogpost-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blogpost-box {
+  width: 50%; /* Set the width to 50% of the parent container */
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #021b07;
+  border-radius: 5px;
+  background-color: #051205;
+  color: #638387;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blogpost-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blogpost-box p {
+  font-size: 16px;
+  line-height: 1.5;
+}
