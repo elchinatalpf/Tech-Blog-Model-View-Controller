@@ -49,3 +49,5 @@ SESSION_SECRET='' "This one can be renamed and is for the server sequilize store
 * https://www.npmjs.com/package/nodemon
 
 ## Deployment
+Temporary deployment link in Heroku
+* https://peaceful-river-55435-be0d95368578.herokuapp.com/

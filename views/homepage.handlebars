@@ -1,16 +1,17 @@
-{{#each blogposts as |blogpost|}}
+{{#each blogs as |blogpost|}}
 <div>
   <div>
     <h2>
       <a href="/blogposts/{{blogpost.id}}">{{blogpost.title}}</a>
     </h2>
+    <p>{{description}}</p>
     <p>Created by {{user.name}} on {{format_date blogpost.date_created}}</p>
   </div>
 </div>
+{{/each}}
 
 <div class="d-flex justify-content=center mt-5">
   <button type="submit" class="btn btn-long-fancy">
     <a class="link" href="/dashboard">Create a New Post</a>
   </button>
 </div>
-{{/each}}

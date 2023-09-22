@@ -28,11 +28,12 @@ router.get('/:id', (req, res) => {
 //create a new comment
 router.post('/', async (req, res) => {
   try {
+    console.log(req.body);
     const newComment = await Comments.create({
       ...req.body,
-      userId: req.session.userId,
+      user_id: req.session.user_id,
     });
-    res.status(newComment);
+    res.json(newComment);
   } catch (err) {
     res.status(500).json(err);
   }

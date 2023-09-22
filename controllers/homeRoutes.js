@@ -20,11 +20,12 @@ router.get('/', async (req, res) => {
       logged_in: req.session.logged_in
     });
   } catch (err) {
-    res.status(500).json(err);
+    console.log(err);
+    res.status(500).json({err: 'Failed to retrieve blogs'});
   }
 });
 
-router.get('/blog/:id', async (req, res) => {
+router.get('/blogposts/:id', async (req, res) => {
   try {
     const blogpostData = await Blogpost.findByPk(req.params.id, {
       include: [
@@ -34,16 +35,17 @@ router.get('/blog/:id', async (req, res) => {
         },
         {
           model: Comments,
-          include: [
-            User
-          ]
+          include: [{
+
+            model: User
+          }]
         }
       ],
     });
     
-    console.log(blogpostData);
     const blogs = blogpostData.get({ plain: true });
-
+    
+    console.log(blogs);
     res.render('blogs', {
       ...blogs,
       logged_in: req.session.logged_in
