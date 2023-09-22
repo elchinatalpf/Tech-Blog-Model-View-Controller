@@ -16,9 +16,10 @@
   </form>
 {{/if}}
 <div>
-  {{#each comment as |comment|}}
+  {{#each comments as |comment|}}
   <div style="border-style: solid;">
     <p>{{comment.comment_content}}</p>
   </div>
   {{/each}}
 </div>
+  <script src="/js/comments.js"></script>
