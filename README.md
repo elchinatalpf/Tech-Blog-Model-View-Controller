@@ -50,4 +50,4 @@ SESSION_SECRET='' "This one can be renamed and is for the server sequilize store
 
 ## Deployment
 Temporary deployment link in Heroku
-* https://peaceful-river-55435-be0d95368578.herokuapp.com/
+* https://tech-block-mvc-3dbf225d4a8e.herokuapp.com/
