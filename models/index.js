@@ -2,7 +2,7 @@ const User = require('./User');
 const Blogpost = require('./Blogpost');
 const Comments = require('./Comments');
 
-
+// renamed files
 User.hasMany(Blogpost, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
